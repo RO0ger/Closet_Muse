@@ -1,0 +1,11 @@
+# Secrets — pushed to Supabase via `supabase secrets set --env-file .env`,
+# never committed. Only .env.example is tracked. The Gemini key was disabled
+# by Google's secret scanner after this file was committed once; do not re-add.
+services/backend/.env
+.env.local
+.claude
+Claude/.env
+CLAUDE.md
+# Supabase CLI local state
+supabase/.temp/
+supabase/.branches/

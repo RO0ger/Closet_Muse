@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "ClosetMuse",
+    "slug": "closetmuse-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "closetmuse",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#F6F0F0"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.closetmuse.app"
+    },
+    "android": {
+      "package": "com.closetmuse.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#F6F0F0"
+      },
+      "blockedPermissions": [
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "./plugins/withLeastPrivilegePermissions",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "ClosetMuse uses your camera so you can photograph clothing and add it to your wardrobe.",
+          "photosPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "ClosetMuse uses your location while you use the app to show local weather and recommend outfits suited to current conditions."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

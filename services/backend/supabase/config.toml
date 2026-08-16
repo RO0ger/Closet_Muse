@@ -1,0 +1,71 @@
+project_id = "closet-muse"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "closetmuse://"
+additional_redirect_urls = ["closetmuse://auth/callback"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = false
+
+[storage]
+enabled = true
+file_size_limit = "5MiB"
+
+[edge_runtime]
+enabled = true
+
+[functions.create-profile]
+verify_jwt = true
+
+[functions.generate-upload-url]
+verify_jwt = true
+
+[functions.begin-upload]
+verify_jwt = true
+
+[functions.finalize-upload]
+verify_jwt = true
+
+[functions.cancel-upload]
+verify_jwt = true
+
+[functions.reconcile-upload-cleanup]
+verify_jwt = false
+
+[functions.auto-tag-item]
+verify_jwt = true
+
+[functions.fetch-weather]
+verify_jwt = true
+
+[functions.generate-recommendation]
+verify_jwt = true
+
+[functions.style-me]
+verify_jwt = true
+
+[functions.submit-feedback]
+verify_jwt = true
+
+[functions.chat-search]
+verify_jwt = true

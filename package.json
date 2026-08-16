@@ -1,0 +1,10 @@
+{
+  "name": "closet-muse-monorepo",
+  "private": true,
+  "description": "Not an npm workspace root on purpose — apps/mobile and services/backend each manage their own dependencies independently. See README.md.",
+  "devDependencies": {
+    "@types/react": "~19.2.4",
+    "supabase": "^2.113.0",
+    "typescript": "~5.9.2"
+  }
+}

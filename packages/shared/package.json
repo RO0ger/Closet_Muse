@@ -1,0 +1,7 @@
+{
+  "name": "@closet-muse/shared-types",
+  "version": "0.1.0",
+  "private": true,
+  "main": "database.ts",
+  "types": "database.ts"
+}

@@ -1,0 +1,26 @@
+# Dependencies and generated bundles
+node_modules/
+.expo/
+dist/
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local Supabase state
+supabase/.temp/
+supabase/.branches/
+
+# Agent and personal workspace files
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+Claude/
+.codex/
+.agents/
+
+# Operating-system and editor artifacts
+.DS_Store
+*.log
